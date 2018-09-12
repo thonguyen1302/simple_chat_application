@@ -1,0 +1,19 @@
+<h1>Join to chat</h1>
+<div class="ui form segment">
+  <%= form_tag join_path do |f| %>
+
+  <div class="two fields">
+    <div class="field">
+      <%= label_tag :username %>
+      <div class="field">
+        <%= text_field_tag :username %>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= submit_tag "Join to chat", class: "ui submit button" %>
+    </div>
+  </div>
+  <% end %>
+
+</div>
