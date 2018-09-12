@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="row">
+  <% @users.each do |user| %>
+    <div class="col-md-3 card mb-4 shadow-sm">
+      <%= image_tag avatar_url(user.username) %>
+      <div class="card-body">
+        <p class="card-text"><b><%= user.username %></b></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-success btn-outline-secondary">Message</button>
+          </div>
+          <small class="text-muted"></small>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+
+  <div class="col-md-12">
+    <ul id="conversations-list">
+      <% @conversations.each do |conversation| %>
+        <%= render 'conversations/conversation', conversation: conversation, user: current_user %>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
