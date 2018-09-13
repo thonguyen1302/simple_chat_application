@@ -1,0 +1,8 @@
+var conversation = $('#conversations-list').find("[data-conversation-id='" + "<%= @conversation.id %>" + "']");
+<% @messages.each do |message| %>
+  conversation.find('.messages-list').find('ul').prepend("<%= j(render 'messages/message', message: message, user: current_user) %>");
+<% end %>
+
+$("#loadmore").html("<%= j(render 'conversations/loadmore', messages: @messages) %>");
+
+conversation.find('textarea').val('');

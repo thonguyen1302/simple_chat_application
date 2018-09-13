@@ -1,0 +1,12 @@
+<div class="col-md-3 card mb-4 shadow-sm">
+  <%= image_tag avatar_url(@user.id) %>
+  <div class="card-body">
+    <p class="card-text"><b><%= @user.username.upcase %></b></p>
+  </div>
+</div>
+
+<div class="col-md-9">
+  <ul id="conversations-list">
+    <%= render 'conversations/conversation', conversation: @conversation, messages: @messages, user: current_user %>
+  </ul>
+</div>
