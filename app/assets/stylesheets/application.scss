@@ -5,3 +5,16 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.message-sent {
+  color: grey;
+}
+
+.message-received {
+  color: blue;
+}
+
+.chat-notification {
+  background-color: green;
+}
+

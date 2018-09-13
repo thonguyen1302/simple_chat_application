@@ -1,7 +1,6 @@
 <li>
-  <div class="row">
-    <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
-      <%= message.content %>
-    </div>
+  <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
+    <b><%= message.user.id == user.id ? "Me" : message.user.username %>:</b>
+    <%= message.content %>
   </div>
 </li>
