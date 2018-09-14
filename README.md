@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SETUP
 
-Things you may want to cover:
+* rails db:create
+* rails db:migrate
+* rails db:seed
 
-* Ruby version
+After that the database has 7 animals.
+They are
+"fish"
 
-* System dependencies
+"dog"
 
-* Configuration
+"bird"
 
-* Database creation
+"car"
 
-* Database initialization
+"elephant"
 
-* How to run the test suite
+"lion"
 
-* Services (job queues, cache servers, search engines, etc.)
+"wolf"
 
-* Deployment instructions
+RUN IT
 
-* ...
+Open the browser
+
