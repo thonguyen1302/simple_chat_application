@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'home#index'
 
-  get '/home' => 'home#index', as: :home
   get '/join' => 'users#new', as: :join
   post '/join' => 'users#join'
   get '/users/:id' => 'users#show', as: :user

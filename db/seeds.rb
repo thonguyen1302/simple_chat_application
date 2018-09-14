@@ -1,5 +1,32 @@
-1.upto(5) do |i|
-  User.create(
-    username: "user-#{i}"
-  )
-end
+User.create(
+  username: "cat"
+)
+
+User.create(
+  username: "fish"
+)
+
+User.create(
+  username: "dog"
+)
+
+User.create(
+  username: "bird"
+)
+
+User.create(
+  username: "car"
+)
+
+User.create(
+  username: "elephant"
+)
+
+User.create(
+  username: "lion"
+)
+
+User.create(
+  username: "wolf"
+)
+

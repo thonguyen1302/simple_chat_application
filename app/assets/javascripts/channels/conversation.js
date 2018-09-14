@@ -2,7 +2,9 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
   connected: function() {},
   disconnected: function() {},
   received: function(data) {
-    $("#card_" + data['sender_id']).addClass('bg-info');
+    $("#btn_message_" + data['sender_id']).removeClass('btn-success').addClass('btn-danger').addClass('animated pulse infinite');
+    $("#caption_" + data['sender_id']).removeClass('hide');
+
     var conversation = $('#conversations-list').find("[data-conversation-id='" + data['conversation_id'] + "']");
  
     if (data['window'] !== undefined) {
