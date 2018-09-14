@@ -61,26 +61,24 @@ Goto http://localhost:3000/ and input the username is "fish" (do it in the other
 After that the system also redirect to list users page.
 
 
-Come back to the browser of the Cat user.
+Click Message button of Cat user.
 
-Click Message button of Fish user.
-
-![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/select_fish.png "select_fish.png")
+![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/select_cat.png "select_cat.png")
 
 
-Chat something to Fish.
-![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/cat_chat.png "cat_chat.png")
+Chat something to Cat.
+![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/fish_start_chat.png "fish_start_chat.png")
 
-After that the card of Cat user in the list user page of Fish user will be change color and has a little animation. It's also has the "New messages" alert.
+After that the card of Fish user in the list users page of Cat user will be change color and has a little animation. It's also has the "New messages" alert.
 
 ![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/new_messages.png "new_messages.png")
 
 
 Click on the red Message button.
 
-Say something with cat user.
+Say something with fish user.
 
-![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/hello_cat.png "hello_cat.png")
+![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/hello_cat.png "cat_answer.png")
 
 You can chat more to continute the conversation.
 
@@ -93,5 +91,7 @@ You need to reload the page to see that.
 
 ![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/load_more.png "load_more.png")
 
+
+NOTE: The users list is not real time update, something you need to reload the page. 
 
 THANK YOU!
