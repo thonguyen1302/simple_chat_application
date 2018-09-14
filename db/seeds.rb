@@ -1,8 +1,4 @@
 User.create(
-  username: "cat"
-)
-
-User.create(
   username: "fish"
 )
 
