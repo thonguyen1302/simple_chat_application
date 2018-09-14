@@ -1,12 +1,16 @@
-<div class="col-md-3 card mb-4 shadow-sm">
-  <%= image_tag avatar_url(@user.id) %>
-  <div class="card-body">
-    <p class="card-text"><b><%= @user.username.upcase %></b></p>
+<div class="row">
+  <div class="col-md-2 card mb-4 shadow-sm">
+    <%= image_tag avatar_url(@user.username), class: "img-responsive" %>
+    <b><%= @user.username.upcase %></b>
   </div>
-</div>
 
-<div class="col-md-9">
-  <ul id="conversations-list">
-    <%= render 'conversations/conversation', conversation: @conversation, messages: @messages, user: current_user %>
-  </ul>
+  <div class="col-sm-8 frame">
+    <ul id="conversations-list">
+      <%= render 'conversations/conversation', conversation: @conversation, messages: @messages, user: current_user %>
+    </ul>
+  </div>
+
+  <div class="col-md-2 card mb-4 shadow-sm">
+    
+  </div>
 </div>

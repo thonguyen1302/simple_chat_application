@@ -1,6 +1,13 @@
-<li>
-  <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
-    <b><%= message.user.id == user.id ? "Me" : message.user.username %>:</b>
-    <%= message.content %>
+
+<li style="width:100%">
+  <div class="msj macro">
+    <div class="avatar">
+      <%= image_tag avatar_url(message.user.username), class: 'img-circle' %>
+    </div>
+
+      <div class="text text-l">
+          <p><%= message.content %></p>
+          <p><small><%= time_ago_in_words(message.created_at) %></small></p>
+      </div>
   </div>
 </li>

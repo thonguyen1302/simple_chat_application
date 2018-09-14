@@ -6,7 +6,7 @@ class UsersController < ApplicationController
       user = User.create(username: params[:username])
     end
     cookies[:user_id] = user.id
-    redirect_to home_path
+    redirect_to root_path
   end
 
   def show

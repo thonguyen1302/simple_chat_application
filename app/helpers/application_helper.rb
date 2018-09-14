@@ -1,6 +1,7 @@
 module ApplicationHelper
-  def avatar_url(user_id)
-    @avatar_url = "https://randomuser.me/api/portraits/men/" +  user_id.to_s + ".jpg"
+  def avatar_url(username)
+    @avatar_url = "https://source.unsplash.com/320x210/weekly?" +  username
+
   end
 
   def current_user

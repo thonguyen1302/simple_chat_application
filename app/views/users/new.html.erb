@@ -1,19 +1,18 @@
-<h1>Join to chat</h1>
-<div class="ui form segment">
-  <%= form_tag join_path do |f| %>
-
-  <div class="two fields">
-    <div class="field">
-      <%= label_tag :username %>
-      <div class="field">
-        <%= text_field_tag :username %>
+<div class="join_bg">
+  <h1 class="form-heading"></h1>
+  <div class="login-form">
+    <div class="main-div">
+      <div class="panel">
+        <h2>Join to chat</h2>
+        <p>Please enter your username</p>
       </div>
+      <%= form_tag join_path do |f| %>
+        <div class="form-group">
+          <%= text_field_tag :username, nil, class: "form-control", id: "inputUsername", placeholder: "Username" %>
+        </div>
+        <%= submit_tag "Join to chat", class: "btn btn-primary" %>
+      <% end %>
     </div>
-
-    <div class="field">
-      <%= submit_tag "Join to chat", class: "ui submit button" %>
-    </div>
+    <p class="botto-text"> Designed by Tho Nguyen</p>
   </div>
-  <% end %>
-
 </div>
