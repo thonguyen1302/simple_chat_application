@@ -48,13 +48,13 @@ After click "Join to chat", it will go to List users page
 
 Now, we will use the other user to join to chat with Cat user.
 
-Because the application doesn't have Authenticate, I use cookies to manage the username.
+Because the application doesn't have authentication, I used cookies to manage the username.
 
 So you have to open the other browser or the private window of current browser. That make sure we have 2 users they have different cookies.
 
 ![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/private_window.png "private_window.png")
 
-Goto http://localhost:3000/ and input the username is "fish"
+Goto http://localhost:3000/ and input the username is "fish" (do it in the other browser or private window)
 
 ![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/fish_username.png "fish_username.png")
 
@@ -85,7 +85,7 @@ Say something with cat user.
 You can chat more to continute the conversation.
 
 
-I also did the pagination for messages.
+I also did the pagination for messages (10 messages per page).
 
 But, it's not display realtime in the conversation.
 
