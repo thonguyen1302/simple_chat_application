@@ -78,7 +78,7 @@ Click on the red Message button.
 
 Say something with fish user.
 
-![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/hello_cat.png "cat_answer.png")
+![alt tag](https://github.com/thonguyen1302/simple_chat_application/blob/documents/docs/cat_answer.png "cat_answer.png")
 
 You can chat more to continute the conversation.
 
